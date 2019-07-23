@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="no-nb">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <title>Åpen Himmel - App</title>
-</head>
-<body class="bg-light">
-    <div style="display:grid; width: 100vw; height: 100vh; place-content: center;" class="">
-        <div class="m-1" style="max-width: 960px;">
-
-            <div class="card shadow mt-3 mb-3 w-100" style="width: 18rem;">
-                    <img class="card-img-top" src="icon.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Åpen himmel 2019</h5>
-                        <!-- <p class="card-text">På grunn av tekniske problemer...</p> -->
-                        <a class="btn btn-primary w-100" href="https://github.com/kodekameratene/apenhimmel_promo_page/releases/download/v2.2.3/ApenHimmel2019.apk" download>
-                            Last ned!
-                        </a>
-                    </div>
-                </div>
-                <div class="card shadow mt-3 mb-3 w-100" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Hvordan går jeg frem</h5>
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/2OCaBPigVJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
+  </head>
+  <body class="bg-light">
+    <div
+      style="display:grid; width: 100vw; height: 100vh; place-content: center;"
+      class=""
+    >
+      <div class="m-1" style="max-width: 960px;">
+        <div class="card shadow mt-3 mb-3 w-100" style="width: 18rem;">
+          <img class="card-img-top" src="icon.jpg" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">Åpen himmel 2019</h5>
+            <!-- <p class="card-text">På grunn av tekniske problemer...</p> -->
+            <a
+              class="btn btn-primary w-100"
+              href="https://github.com/kodekameratene/apenhimmel_promo_page/releases/download/v2.2.3/ApenHimmel2019.apk"
+              download
+            >
+              Last ned!
+            </a>
+          </div>
         </div>
-        <!-- <div class="card shadow m-3" style="width: 18rem;">
+        <div class="card shadow mt-3 mb-3 w-100" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Hvordan går jeg frem</h5>
+            <iframe
+              width="100%"
+              height="auto"
+              src="https://www.youtube.com/embed/2OCaBPigVJQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="card shadow m-3" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Hvordan går jeg fremm</h5>
                 <p class="card-text">På grunn av tekniske problemer...</p>
@@ -36,34 +54,50 @@
         </div> -->
     </div>
 
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v3.3'
-    });
-  };
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml: true,
+          version: "v3.3"
+        });
+      };
 
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+      (function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
 
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="440518010130691"
-  theme_color="#67b868"
-  logged_in_greeting="Hei! Hvordan kan vi helpe deg?"
-  logged_out_greeting="Hei! Hvordan kan vi helpe deg?">
-</div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+    <!-- Your customer chat code -->
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="440518010130691"
+      theme_color="#67b868"
+      logged_in_greeting="Hei! Hvordan kan vi helpe deg?"
+      logged_out_greeting="Hei! Hvordan kan vi helpe deg?"
+    ></div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
